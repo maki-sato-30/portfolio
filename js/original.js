@@ -15,7 +15,7 @@ $(function() {
     $('.works-slider').slick({
         autoplay: true,
         fade: true,
-        prevArrow: '<img src="../img/prev.svg" class="slide-arrow prev-arrow">',
-        nextArrow: '<img src="../img/next.svg" class="slide-arrow next-arrow">'
+        prevArrow: '<img src="img/prev.svg" class="slide-arrow prev-arrow">',
+        nextArrow: '<img src="img/next.svg" class="slide-arrow next-arrow">'
     });
 });
