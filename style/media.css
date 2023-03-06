@@ -3,6 +3,11 @@
 /*===================================
 common css
 ===================================*/
+@media screen and (max-width: 768px) {
+    .sp {
+        display: block;
+    }
+}
 
 /*===================================
 mv
@@ -131,7 +136,7 @@ section common
     }
 
     .section-ttl-wrap h2 {
-        font-size: 2.994791666666667vw;
+        font-size: max(3.6458333333333335vw,15px);
         padding: 1.3020833333333335vw 5.859375vw;
     }
 }
@@ -226,9 +231,40 @@ section 2
     #skills .section-ttl-wrap {
         width: 70.83333333333334vw;
     }
+
+    .skills-item {
+        width: 18.541666666666668vw;
+        padding: 1.5277777777777777vw 1.5277777777777777vw 2.569444444444444vw 1.5277777777777777vw;
+    }
+
+    .skill-name {
+        gap: 1.0416666666666665vw;
+        margin-bottom: 1.0416666666666665vw;
+    }
+
+    .skill-name h3 {
+        font-size: max(1.1111111111111112vw, 14px);
+    }
+
+    .skills-item p {
+        font-size: max(1.0416666666666665vw, 13px);
+    }
+
+    .skills-point {
+        width: 1.3194444444444444vw;
+        right: 2.083333333333333vw;
+    }
+
+    .skill-name img {
+        width: 4.444444444444445vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    #skills .section-ttl-wrap img {
+        width: 30.208333333333332vw;
+    }
+
     #skills .section-ttl-wrap {
         width: 80.078125vw;
     }
@@ -237,8 +273,23 @@ section 2
         width: 8.333333333333332vw;
     }
 
+    .skills-item {
+        width: 29.947916666666668vw;
+        padding: 2.604166666666667vw 2.604166666666667vw 2.569444444444444vw 2.604166666666667vw;
+        margin: 0 0.6510416666666667vw;
+    }
+
+    .skill-name h3 {
+        font-size: max(2.083333333333333vw, 12px);
+    }
+
     .skills-item p {
-        font-size: max(2.083333333333333vw, 13px);
+        font-size: max(2.083333333333333vw, 11px);
+    }
+
+    .skills-point {
+        width: 2vw;
+        right: 2.604166666666667vw;
     }
 }
 
@@ -248,11 +299,11 @@ section 3
 @media screen and (max-width: 1440px) {   
     .slide-arrow{
         width: 3.680555555555556vw;
-        top: 15.48611111111111vw;
+        top: 36.11111111111111vw;
     }
 
     .works-item img {
-        width: 59.166666666666664vw;
+        width: 70.83333333333334vw;
     }
 
     .works-body {
@@ -289,16 +340,6 @@ section 3
         font-size: max(1.1111111111111112vw, 14px);
     }
     
-    .works-body-text p:nth-child(1) {
-        width: 8.88888888888889vw;
-    }
-    
-    .works-body-text p:nth-child(2) {
-        width: 29.02777777777778vw;
-    }
-}
-
-@media screen and (max-width: 1440px) {
     .works-body {
         width: 72.03389830508475vw;
     }
@@ -314,19 +355,28 @@ section 3
 }
 
 @media screen and (max-width: 768px) {   
+    #works .section-ttl-wrap img {
+        width: 24.479166666666664vw;
+    }
+
     .slide-arrow{
         width: 6.380208333333333vw;
-        min-width: 8vw;
-        top: 16.927083333333336vw;
+        min-width: 30px;
+        top: 47.65625vw;
     }
 
     .works-item img {
-        width: 67.70833333333334vw;
+        width: 92.1875vw;
     }
 
     .works-body {
-        width: 80.078125vw;
+        width: 92.1875vw;
         padding-top: 3.2552083333333335vw;
+    }
+
+    .works-body p {
+        font-size: max(2.083333333333333vw, 13px);
+        line-height: 1.5;
     }
     
     .works-body h3 {
@@ -335,7 +385,7 @@ section 3
     }
     
     .works-body h3.aoba {
-        font-size: 2.734375vw;
+        font-size: max(2.734375vw, 15px);
     }
     
     .works-body h4 {
@@ -352,6 +402,7 @@ section 3
 
     .works-body-text p {
         font-size: max(2.083333333333333vw, 13px);
+        line-height: 2;
     }
     
     .works-body-text p:nth-child(1) {
@@ -359,6 +410,21 @@ section 3
     }
     
     .works-body-text p:nth-child(2) {
-        width: 49.609375vw;
+        width: 57.03125vw;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .works-body-text {
+        margin-top: 2.994791666666667vw;
+        padding: 3.90625vw 4vw;
+    }
+
+    .works-body-text p {
+        font-size: 12px;
+    }
+
+    .works-body-text p:nth-child(1) {
+        width: 20.51282051282051vw;
     }
 }
