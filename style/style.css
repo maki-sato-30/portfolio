@@ -321,7 +321,7 @@ section 3
 }
 
 .works-body {
-    width: 680px;
+    width: 1020px;
     margin: 0 auto;
     text-align: center;
     padding-top: 25px;
@@ -352,7 +352,6 @@ section 3
     background-color: #F3F3F3;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     text-align: left;
     line-height: 2;
@@ -367,9 +366,120 @@ section 3
 }
 
 .works-body-text p:nth-child(1) {
-    width: 128px;
+    width: 130px;
 }
 
 .works-body-text p:nth-child(2) {
-    width: 418px;
+    width: 756px;
+}
+
+/*===================================
+section 4
+===================================*/
+#about.section-wrap {
+    background-color: #F3F3F3;
+}
+
+.about-body-flex-wrap h3 {
+    color: #1A442D;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.about-body-cont {
+    margin: 34px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+}
+
+.about-body-item1 {
+    color: #1A442D;
+}
+
+.about-body-item1-flex {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 15px 0 25px;
+}
+
+.about-body-item1-flex img {
+    width: 20px;
+}
+
+.about-body-item1 h4 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about-body-item1 p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.about-body-item1-adjust {
+    padding-left: 5px;
+}
+
+.about-body-item2 {
+    background-color: #fff;
+    padding: 40px 60px 50px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.about-body-item2 h4 {
+    background-color: #1A442D;
+    color: #fff;
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.about-body-text {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.about-body-text p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.about-body-text p:first-child {
+    width: 197px;
+    padding-right: 30px;
+    border-right: 1px solid #000;
+}
+
+.about-body-text p:last-child {
+    width: 381px;
+}
+
+.about-body-text-wrap {
+    width: 100%;
+    position: relative;
+    border-top: 3px solid #1A442D;
+    border-bottom: 3px solid #1A442D;
+    padding: 40px;
+}
+
+.about-body-text-wrap img {
+    width: 282px;
+    position: absolute;
+    top: -50px;
+    right: 51px;
+}
+
+.about-body-text-wrap p {
+    width: 617px;
+    line-height: 1.5;
+}
+
+.about-body-text-wrap p:not(:last-child) {
+    padding-bottom: 30px;
 }
