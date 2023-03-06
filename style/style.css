@@ -16,6 +16,10 @@ common css
     white-space: nowrap
 }
 
+.sp {
+    display: none;
+}
+
 /*===================================
 mv
 ===================================*/
@@ -239,6 +243,10 @@ section 2
     gap: 18px;
 }
 
+.slick-slide {
+    height: auto;
+}
+
 #skills .section-ttl-wrap {
     width: 1020px;
     margin-left: auto;
@@ -276,6 +284,7 @@ section 2
 }
 
 .skill-name h3 {
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -298,7 +307,7 @@ section 3
 
 .slide-arrow{
     position: absolute;
-    top: 223px;
+    top: 520px;
     z-index: 1000;
     cursor: pointer;
 }
@@ -327,7 +336,7 @@ section 3
 }
 
 .works-body h3.aoba {
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .works-body h4 {
