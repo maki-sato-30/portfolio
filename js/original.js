@@ -36,3 +36,49 @@ $('a[href^="#"]').on('click', function () {
     $("html, body").animate({scrollTop: position}, 550, "swing");
     return false;
 });
+
+//アニメーション
+$(function () {
+    $(window).scroll(function () {
+        $('.fade-in').each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+                $(this).addClass('active');
+            }
+        });
+        $('.fade-top').each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+                $(this).addClass('active');
+            }
+        });
+        $('.fade-bottom').each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+                $(this).addClass('active');
+            }
+        });
+        $('.fade-left').each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+                $(this).addClass('active');
+            }
+        });
+        $('.fade-right').each(function () {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 200) {
+                $(this).addClass('active');
+            }
+        });
+    });
+});
