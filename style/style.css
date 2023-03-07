@@ -20,6 +20,10 @@ common css
     display: none;
 }
 
+.x-sp {
+    display: none;
+}
+
 /*===================================
 mv
 ===================================*/
@@ -160,7 +164,7 @@ section common
 }
 
 .section-wrap .section-body-wrap {
-    width: 1020px;
+    width: 1023px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -238,17 +242,17 @@ section 2
     width: 100%;
 }
 
-.skills-slider {
-    display: flex;
-    gap: 18px;
-}
-
-.slick-slide {
-    height: auto;
-}
-
 #skills .section-ttl-wrap {
-    width: 1020px;
+    width: 1023px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-cont-wrap {
+    width: 1023px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -259,11 +263,10 @@ section 2
 }
 
 .skills-item {
-    width: 267px;
+    width: 250px;
     padding: 22px 22px 37px 22px;
     background-color: #fff;
     position: relative;
-    margin: 0 8px;
 }
 
 .skills-point {
@@ -482,4 +485,20 @@ section 4
 
 .about-body-text-wrap p:not(:last-child) {
     padding-bottom: 30px;
+}
+
+/*===================================
+footer
+===================================*/
+footer {
+    background-color: #1A442D;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer .copy {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
 }
