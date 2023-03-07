@@ -9,24 +9,36 @@ $(function() {
 
 
 //hover無効
-var touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+		addEventListener('DOMContentLoaded', function() {
+			if (isTouchDevice()) {
+				for (var i in document.styleSheets)
+					if (document.styleSheets.hasOwnProperty(i)) {
+						deleteRuleHover(document.styleSheets[i]);
+					}
+			}
 
-if (touch) {
-    try {
-        for (var si in document.styleSheets) {
-            var styleSheet = document.styleSheets[si];
-            if (!styleSheet.rules) continue;
+			function isTouchDevice() {
+				return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints || navigator.msMaxTouchPoints;
+			}
 
-            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                if (!styleSheet.rules[ri].selectorText) continue;
-
-                if (styleSheet.rules[ri].selectorText.match(':hover')) {
-                    styleSheet.deleteRule(ri);
-                }
-            }
-        }
-    } catch (ex) { }
-}
+			function deleteRuleHover(styleSheet) {
+				try {
+					var rules = styleSheet.cssRules || styleSheet.rules;
+					if (rules) {
+						for (var i = rules.length; i--;) {
+							var text = rules[i].selectorText;
+							if (/:hover/.test(text)) {
+								//console.log(text);
+								styleSheet.deleteRule(i);
+							}
+						}
+						for (var i = rules.length; i--;) deleteRuleHover(rules[i]);
+					}
+				} catch (ex) {
+					//console.log(ex);
+				}
+			}
+		});
 
 //ページ内リンクスムーススクロール
 $('a[href^="#"]').on('click', function () {
