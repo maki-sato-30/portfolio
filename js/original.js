@@ -1,21 +1,38 @@
 $(function() {
-    $('.skills-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 8000,
-        cssEase: 'linear',
-        arrows:false,
-        centerMode: true,
-        initialSlide: 3,
-        variableWidth: true
-    });
-});
-
-$(function() {
     $('.works-slider').slick({
         autoplay: true,
         fade: true,
         prevArrow: '<img src="img/prev.svg" class="slide-arrow prev-arrow">',
         nextArrow: '<img src="img/next.svg" class="slide-arrow next-arrow">'
     });
+});
+
+
+//hover無効
+var touch = 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+
+if (touch) {
+    try {
+        for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
+
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
+
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+            }
+        }
+    } catch (ex) { }
+}
+
+//ページ内リンクスムーススクロール
+$('a[href^="#"]').on('click', function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop: position}, 550, "swing");
+    return false;
 });
