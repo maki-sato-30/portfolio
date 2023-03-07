@@ -9,36 +9,36 @@ $(function() {
 
 
 //hover無効
-		addEventListener('DOMContentLoaded', function() {
-			if (isTouchDevice()) {
-				for (var i in document.styleSheets)
-					if (document.styleSheets.hasOwnProperty(i)) {
-						deleteRuleHover(document.styleSheets[i]);
-					}
-			}
+addEventListener('DOMContentLoaded', function() {
+    if (isTouchDevice()) {
+        for (var i in document.styleSheets)
+            if (document.styleSheets.hasOwnProperty(i)) {
+                deleteRuleHover(document.styleSheets[i]);
+            }
+    }
 
-			function isTouchDevice() {
-				return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints || navigator.msMaxTouchPoints;
-			}
+    function isTouchDevice() {
+        return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints || navigator.msMaxTouchPoints;
+    }
 
-			function deleteRuleHover(styleSheet) {
-				try {
-					var rules = styleSheet.cssRules || styleSheet.rules;
-					if (rules) {
-						for (var i = rules.length; i--;) {
-							var text = rules[i].selectorText;
-							if (/:hover/.test(text)) {
-								//console.log(text);
-								styleSheet.deleteRule(i);
-							}
-						}
-						for (var i = rules.length; i--;) deleteRuleHover(rules[i]);
-					}
-				} catch (ex) {
-					//console.log(ex);
-				}
-			}
-		});
+    function deleteRuleHover(styleSheet) {
+        try {
+            var rules = styleSheet.cssRules || styleSheet.rules;
+            if (rules) {
+                for (var i = rules.length; i--;) {
+                    var text = rules[i].selectorText;
+                    if (/:hover/.test(text)) {
+                        //console.log(text);
+                        styleSheet.deleteRule(i);
+                    }
+                }
+                for (var i = rules.length; i--;) deleteRuleHover(rules[i]);
+            }
+        } catch (ex) {
+            //console.log(ex);
+        }
+    }
+});
 
 //ページ内リンクスムーススクロール
 $('a[href^="#"]').on('click', function () {
@@ -56,7 +56,7 @@ $(function () {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > position - windowHeight + 50) {
+            if (scroll > position - windowHeight + 20) {
                 $(this).addClass('active');
             }
         });
@@ -64,7 +64,7 @@ $(function () {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > position - windowHeight + 50) {
+            if (scroll > position - windowHeight + 20) {
                 $(this).addClass('active');
             }
         });
@@ -72,7 +72,7 @@ $(function () {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > position - windowHeight + 50) {
+            if (scroll > position - windowHeight + 20) {
                 $(this).addClass('active');
             }
         });
@@ -80,7 +80,7 @@ $(function () {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > position - windowHeight + 50) {
+            if (scroll > position - windowHeight + 20) {
                 $(this).addClass('active');
             }
         });
@@ -88,7 +88,7 @@ $(function () {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
-            if (scroll > position - windowHeight + 50) {
+            if (scroll > position - windowHeight + 20) {
                 $(this).addClass('active');
             }
         });
