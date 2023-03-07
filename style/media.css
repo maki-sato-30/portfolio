@@ -9,6 +9,12 @@ common css
     }
 }
 
+@media screen and (max-width: 320px) {
+    .x-sp {
+        display: block;
+    }
+}
+
 /*===================================
 mv
 ===================================*/
@@ -74,7 +80,7 @@ mv
     }
 
     .header-wrap {
-        width: 65.10416666666666vw;
+        width: 75vw;
         flex-wrap: wrap;
         gap : 5.859375vw;
         margin-top: 8.723958333333332vw; 
@@ -88,6 +94,12 @@ mv
     .scroll-down{
         height: 6.510416666666667vw;
         margin-top: 31.510416666666668vw;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .header-wrap {
+        width: 90vw;
     }
 }
 
@@ -173,7 +185,7 @@ section 1
 
     .can-cont-body {
         padding-top: 1.7361111111111112vw;
-        font-size: max(1.1111111111111112vw, 12px);
+        font-size: 1.1111111111111112vw;
     }
 }
 
@@ -229,15 +241,20 @@ section 2
 ===================================*/
 @media screen and (max-width: 1440px) {
     #skills .section-ttl-wrap {
-        width: 70.83333333333334vw;
+        width: 71.04166666666667vw;
     }
 
     #skills .section-ttl-wrap img {
         width: 16.11111111111111vw;
     }
 
+    .skills-cont-wrap {
+        width: 71.04166666666667vw;
+        gap: 0.4861111111111111vw;
+    }
+
     .skills-item {
-        width: 18.541666666666668vw;
+        width: 17.36111111111111vw;
         padding: 1.5277777777777777vw 1.5277777777777777vw 2.569444444444444vw 1.5277777777777777vw;
     }
 
@@ -247,11 +264,11 @@ section 2
     }
 
     .skill-name h3 {
-        font-size: max(1.1111111111111112vw, 13px);
+        font-size: 1.1111111111111112vw;
     }
 
     .skills-item p {
-        font-size: max(1.0416666666666665vw, 12px);
+        font-size: 1.0416666666666665vw;
     }
 
     .skills-point {
@@ -273,14 +290,22 @@ section 2
         width: 80.078125vw;
     }
 
+    .skills-cont-wrap {
+        width: 92.1875vw;
+        gap: 1.3020833333333335vw;
+    }
+
+    .skill-name {
+        gap: 1.953125vw;
+    }
+
     .skill-name img {
         width: 8.333333333333332vw;
     }
 
     .skills-item {
-        width: 29.947916666666668vw;
+        width: 44.79166666666667vw;
         padding: 2.604166666666667vw 2.604166666666667vw 2.569444444444444vw 2.604166666666667vw;
-        margin: 0 0.6510416666666667vw;
     }
 
     .skill-name h3 {
@@ -292,7 +317,7 @@ section 2
     }
 
     .skills-point {
-        width: 2vw;
+        width: 3vw;
         right: 2.604166666666667vw;
     }
 }
@@ -320,22 +345,22 @@ section 3
     }
     
     .works-body h3 {
-        font-size: max(1.9444444444444444vw, 22px);
+        font-size: 1.9444444444444444vw;
         padding: 0 4.166666666666666vw 0.4861111111111111vw 4.166666666666666vw;
     }
     
     .works-body h3.aoba {
-        font-size: max(1.6vw, 19px);
+        font-size: 1.6vw;
     }
     
     .works-body h4 {
-        font-size: max(1.25vw, 15px);
+        font-size: 1.25vw;
         padding-top: 0.6944444444444444vw;
         margin-bottom: 1.0416666666666665vw;
     }
 
     .works-body p {
-        font-size: max(1.1111111111111112vw, 13px);
+        font-size: 1.1111111111111112vw;
     }
     
     .works-body-text {
@@ -346,7 +371,7 @@ section 3
     }
 
     .works-body-text p {
-        font-size: max(1.1111111111111112vw, 12px);
+        font-size: 1.1111111111111112vw;
     }
     
     .works-body {
@@ -361,12 +386,6 @@ section 3
         width: 52.5vw;
     }
 
-}
-
-@media screen and (max-width: 900px) { 
-    .works-body-text p:nth-child(1) {
-        width: 12vw;
-    }
 }
 
 @media screen and (max-width: 768px) {   
@@ -464,7 +483,7 @@ section 4
     }
 
     .about-body-flex-wrap h3 {
-        font-size: max(1.597222222222222vw, 18px);
+        font-size: 1.597222222222222vw;
     }
     
     .about-body-cont {
@@ -483,11 +502,11 @@ section 4
     }
     
     .about-body-item1 h4 {
-        font-size: max(2.430555555555556vw, 20px);
+        font-size: 2.430555555555556vw;
     }
     
     .about-body-item1 p {
-        font-size: max(1.1111111111111112vw, 12px);
+        font-size: 1.1111111111111112vw;
     }
     
     .about-body-item1-adjust {
@@ -511,7 +530,7 @@ section 4
     }
     
     .about-body-text p {
-        font-size: max(1.1111111111111112vw, 12px);
+        font-size: 1.1111111111111112vw;
     }
     .about-body-text p:first-child {
         width: 13.680555555555557vw;
@@ -535,7 +554,7 @@ section 4
     
     .about-body-text-wrap p {
         width: 42.84722222222222vw;
-        font-size: max(1.1111111111111112vw ,12px);
+        font-size: 1.1111111111111112vw;
     }
     
     .about-body-text-wrap p:not(:last-child) {
@@ -555,6 +574,7 @@ section 4
 
     .about-body-flex-wrap h3 {
         font-size: max(2.994791666666667vw, 16px);
+        line-height: 1.5;
     }
     
     .about-body-cont {
@@ -645,5 +665,26 @@ section 4
 @media screen and (max-width: 414px) { 
     .about-body-text-wrap img {
         top: -40vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    footer {
+        padding: 0.6944444444444444vw 0;
+    }
+
+    footer .copy {
+        font-size: 0.8333333333333334vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 1.3020833333333335vw 0;
+    }
+    
+    footer .copy {
+        font-size: 1.5625vw;
     }
 }
