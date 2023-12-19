@@ -1,352 +1,330 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — maki design —</title>
-    <!-- slickのCSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-    <link rel="stylesheet" href="style/destyle.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio — maki sato —</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="canonical" href="">
+<!-- reset.css destyle -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<link href="style/media.css" rel="stylesheet" type="text/css">
+<!-- slickのCSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- ogp -->
+<meta name="og:title" content="">
+<meta name="og:type" content="article">
+<meta name="og:url" content="">
+<meta name="og:image" content="">
+<meta name="og:site_name" content="">
+<meta name="og:description" content="">
+<!-- End ogp -->
 </head>
-
 <body>
+
+
+  <!-- ここからコンテンツ /////////////////////////////////////////////////////////-->
+  <main>
+    <!-- ハンバーガー ------------------------->
+    <span id="toggle" class="h-menu-toggle">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+    <div class="h-menu sp">
+      <img class="h-menu-logo" src="img/logo.svg">
+      <div class="h-menu-flex-wrap">
+        <nav class="h-menu-cont">
+          <ul class="h-menu-ul">
+            <li class="h-menu-li">
+              <a href="#about">
+                <p>About</p>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="h-menu-li">
+              <a href="#works">
+                <p>Works</p>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="h-menu-li">
+              <a href="#service">
+                <p>Service</p>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="h-menu-text">
+          <p>お気軽に<br>ご相談ください</p>
+        </div>
+      </div>
+      <div class="h-menu-contact">
+        <img src="img/contact_eng_point.svg" alt="contact us">
+        <p>こちらに掲載できない実績もございます。<br>
+          詳しくはお問い合わせください。</p>
+          <a class="h-menu-contact-cta" href="https://forms.gle/vKMbk1BdxvmL9Vko8" target="_blank" rel="noopener noreferrer">
+            <p>お問い合わせはこちら</p>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+      </div>
+    </div>
     <!-- mv ------------------------->
-    <section class="mv-area">
-        <div class="logo">
-            <img src="img/logo.svg" alt="Portfolio">
+    <section class="mv-cont-wrap">
+      <!-- header ------------------------->
+      <header id="header" class="header-wrap">
+        <div class="header-left">
+          <a href="#"><img class="logo-img" src="img/logo.svg"></a>
         </div>
-        <div class="mv-text-wrap">
-            <div class="mv-text abhaya fade">
-                <h1>Portfolio</h1>
-                <p>— maki design —</p>
-            </div>
-            <header class="fade">
-                <ul class="header-wrap abhaya">
-                    <li><a href="#can">Can</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="mailto:maki.sato.1206@gmail.com?subject=お問い合わせ">Contact</a></li>
-                </ul>
-            </header>
-            <div class="scroll-down abhaya"><span>scroll</span></div>
+        <div class="header-right pc">
+          <ul>
+            <li>
+              <a href="#about">
+                <p>About</p>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#works">
+                <p>Works</p>
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#service">
+                <p>Service</p>
+                <i class="fas fa-chevron-down"></i>
+              </a> 
+            </li>
+            <li>
+              <a class="btn-gradients not-hover" href="https://forms.gle/vKMbk1BdxvmL9Vko8" target="_blank" rel="noopener noreferrer">
+              <p>Contact</p>
+              <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="mv-img">
-            <picture>
-                <source srcset="img/mv_sp.jpg" media="(max-width: 768px)"/>
-                <img src="img/mv_pc.jpg">
+      </header>
+      
+      <!-- fv ------------------------->
+      <div class="mv-cont">
+        <div class="mv-main-text">
+          <h1>さとう まき</h1>
+          <span>デザイナー</span>
+          <h2>杜の都で<br>
+            デザイナーをして<nobr>います</nobr>
+          </h2>
+          <span>Web / LP / Banner / DTP …</span>
+        </div>
+        <div class="mv-main-img">
+          <div class="slider">
+            <picture class="slider-item">
+              <source srcset="img/mv_01_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/mv_01_pc.jpg" alt="">
             </picture>
+            <picture class="slider-item">
+              <source srcset="img/mv_02_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/mv_02_pc.jpg" alt="">
+            </picture>
+            <picture class="slider-item">
+              <source srcset="img/mv_03_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/mv_03_pc.jpg" alt="">
+            </picture>
+          </div>
         </div>
+      </div>
+      <picture>
+        <source srcset="img/mv_eng_point_sp.svg" media="(max-width: 767px)"/>
+        <img class="mv-eng-point" src="img/mv_eng_point.svg">
+      </picture>
     </section>
-    <!-- section 1 ------------------------->
-    <section id="can" class="section-wrap noto">
-        <div class="section-body-wrap">
-            <div class="section-ttl-wrap fade-left">
-                <h2>こんなことができます</h2>
-                <img src="img/sub-ttl_1.svg" alt="I can do this.">
-            </div>
-            <div class="can-cont-wrap">
-                <div class="can-cont-item fade-bottom">
-                    <div class="can-cont-ttl">
-                        <span class="abhaya">1</span>
-                        <img class="can-name" src="img/design.svg" alt="デザイン">
-                        <picture>
-                            <source srcset="img/can_img_sp.svg" media="(max-width: 768px)"/>
-                            <img class="can-img" src="img/can_img.png">
-                        </picture>
-                    </div>
-                    <div class="can-cont-body">
-                        <p>バナー広告やLPなどのデザイン制作経験を活かし、思いが伝わるデザインを制作いたします。</p>
-                    </div>
-                </div>
-                <div class="can-cont-item fade-bottom late1">
-                    <div class="can-cont-ttl">
-                        <span class="abhaya">2</span>
-                        <img class="can-name" src="img/coding.svg" alt="コーディング">
-                        <picture>
-                            <source srcset="img/can_img_sp.svg" media="(max-width: 768px)"/>
-                            <img class="can-img" src="img/can_img.png">
-                        </picture>
-                    </div>
-                    <div class="can-cont-body">
-                        <p>独学でコーディングスキルを身に着け、JSによるアニメーションの実装やWPのテーマ制作まで行えます。</p>
-                    </div>
-                </div>
-                <div class="can-cont-item fade-bottom late2">
-                    <div class="can-cont-ttl">
-                        <span class="abhaya">3</span>
-                        <img class="can-name" src="img/illust.svg" alt="イラスト">
-                        <picture>
-                            <source srcset="img/can_img_sp.svg" media="(max-width: 768px)"/>
-                            <img class="can-img" src="img/can_img.png">
-                        </picture>
-                    </div>
-                    <div class="can-cont-body">
-                        <p>「こんなイラストが欲しい」を実現するため、自らイラストを描き、欲しい素材を制作することが可能です。</p>
-                    </div>
-                </div>
-            </div>
+
+    <!-- area-1 section ------------------------->
+    <section id="about" class="area-wrap-common area-wrap-01">
+      <picture class="about-bk">
+        <source srcset="img/about_bk_sp.jpg" media="(max-width: 767px)"/>
+        <img src="img/about_bk_pc.jpg" alt="">
+      </picture>
+      <div class="area-point-txt">
+        <p>デザイン制作<br>承ります</p>
+      </div>
+      <div class="area-cont-ttl area-cont-ttl-01">
+        <h3>About</h3>
+      </div>
+      <div class="about-cont">
+        <h4>さとう まき<span class="slash pc">／</span><span class="about-sub">デザイナー</span></h4>
+        <p>独学で制作スキルを学び、IT系のベンチャー企業や制作会社にて、<br class="pc">
+          WebサイトやLP制作、バナーやDTPデザインを3年以上担当。</p>
+        <p>コーディングやWordPressテーマ制作、YouTubeチャンネルの動画制作まで多岐にわたり従事。</p> 
+        <p>2023年4月からフリーランスとして独立。<br>
+          広告代理店からLP制作の依頼や、マーケティング会社からデザイン制作を請け負う。</p> 
+        <p>3匹の愛猫と杜の都で暮らしている。</p>
+      </div>
+      <img class="about-logo" src="img/L_W_logo.svg" alt="">
+    </section>
+
+    <!-- area-2 section ------------------------->
+    <section class="area-wrap-common area-wrap-02">
+      <div class="area-02-cv-wrap">
+        <div class="area-02-ttl">
+          <p>略暦</p>
         </div>
-    </section>
-    <!-- section 2 ------------------------->
-    <section id="skills" class="section-wrap noto">
-        <div class="section-body-wrap">
-            <div class="section-ttl-wrap fade-left">
-                <h2>こんなスキルを持っています</h2>
-                <img src="img/sub-ttl_2.svg" alt="I have these skills.">
+        <div class="cv-wrap">
+          <div class="cv-box">
+            <div class="cv-date">
+              <p>2020.04 - 2022.06</p>
             </div>
-            <div class="skills-cont-wrap">
-                <div class="skills-item fade-bottom">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/html.png">
-                        <h3>HTML/CSS</h3>
-                    </div>
-                    <p>HTML5、CSS3を実務レベルでコーディングが可能。</p>
-                </div>
-                <div class="skills-item fade-bottom late1">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/js.png">
-                        <h3>JavaScript</h3>
-                    </div>
-                    <p>ライブラリを使ったアニメーションの実装可能。</p>
-                </div>
-                <div class="skills-item fade-bottom late2">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/ps.png">
-                        <h3>Photoshop</h3>
-                    </div>
-                    <p>写真加工、Web素材の制作にて実務経験あり。</p>
-                </div>
-                <div class="skills-item fade-bottom late3">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/ai.png">
-                        <h3>Illustrator</h3>
-                    </div>
-                    <p>ロゴ、パッケージ制作にて実務経験あり。</p>
-                </div>
-                <div class="skills-item fade-bottom late4">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/xd.png">
-                        <h3>XD</h3>
-                    </div>
-                    <p>Webサイト、LPのデザインはXDで制作経経あり。</p>
-                </div>
-                <div class="skills-item fade-bottom late5">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/pr.png">
-                        <h3>Premiere Pro</h3>
-                    </div>
-                    <p>YouTubeチャンネルの動画制作の実務経験あり。</p>
-                </div>
-                <div class="skills-item fade-bottom late6">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/figma.png">
-                        <h3>figma</h3>
-                    </div>
-                    <p>figmaを使ってデザイン制作が可能。</p>
-                </div>
-                <div class="skills-item fade-bottom late7">
-                    <img class="skills-point" src="img/skills_point.png">
-                    <div class="skill-name">
-                        <img src="img/wp.png">
-                        <h3>WordPress</h3>
-                    </div>
-                    <p>テーマ制作、HTMLサイトのWordPress化が可能。</p>
-                </div>
+            <div class="cv-cont">
+              <p>株式会社クロコ　デザイナー兼コーダー</p>
+              <p>美容系のプロダクト開発に携わり、LPなどの制作全般を担当。<br>
+                そのほか、YouTubeなどの動画制作にも関わる。</p>
             </div>
+          </div>
+          <div class="cv-box">
+            <div class="cv-date">
+              <p>2020.07 - 2023.03</p>
+            </div>
+            <div class="cv-cont">
+              <p>株式会社ASA　フロントエンドエンジニア</p>
+              <p>大手テクノロジー会社の日本版サイトや、ファッション業界、<br class="pc">
+                地元に特化したサービス系のLPなど様々な業界の制作に携わる。</p>
+            </div>
+          </div>
+          <div class="cv-box">
+            <div class="cv-date">
+              <p>2023.04 - </p>
+            </div>
+            <div class="cv-cont">
+              <p>フリーランスとして独立</p>
+              <p>副業として広告代理店から請け負っていたLP制作などを軸に独立。<br>
+                以下企業の制作プロジェクトにデザイナーとして参画。</p>
+              <span>参画企業</span>
+              <p>株式会社 オンリーネット<br>
+                株式会社 TOAI</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <picture class="cv-eng-point">
+        <source srcset="img/cv_eng_point_sp.svg" media="(max-width: 767px)"/>
+        <img src="img/cv_eng_point.svg" alt="">
+      </picture>
     </section>
-    <!-- section 3 ------------------------->
-    <section id="works" class="section-wrap noto">
-        <div class="section-body-wrap">
-            <div class="section-ttl-wrap fade-left">
-                <h2>今までのお仕事</h2>
-                <img src="img/sub-ttl_3.svg" alt="Work to date.">
-            </div>
-            <div class="works-slider fade-in">
-                <div class="works-item">
-                    <img src="img/work1.jpg">
-                    <div class="works-body fade-bottom">
-                        <h3 class="abhaya">méllow</h3>
-                        <h4 class="abhaya">Design</h4>
-                        <p>エステサロンプロデュース商品<br class="sp">「デコルテケアオイル」のバナー広告制作</p>
-                        <div class="works-body-text">
-                            <p>
-                                ▪訴求対象<br>
-                                ▪要望<br>
-                                ▪ツール<br>
-                                ▪こだわり
-                            </p>
-                            <p>
-                                20代～40代の美意識が高い女性<br>
-                                デコルテに意識が向く広告<br>
-                                Illustrator / Photoshop<br>
-                                デコルテが綺麗な女性の画像を使用し、自身のデコルテにフォーカスを促しました。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item">
-                    <img src="img/work2.jpg">
-                    <div class="works-body fade-bottom">
-                        <h3 class="abhaya">méllow</h3>
-                        <h4 class="abhaya">Design / Coding</h4>
-                        <p>エステサロンプロデュース商品<br class="sp">「デコルテケアオイル」のLP制作</p>
-                        <div class="works-body-text">
-                            <p>
-                                ▪訴求対象<br>
-                                ▪要望<br>
-                                ▪ツール<br>
-                                ▪こだわり
-                            </p>
-                            <p>
-                                20代～40代の美意識が高い女性<br>
-                                各世代で複数パターン欲しい<br>
-                                XD / Illustrator / Photoshop<br>
-                                対象とする年齢層も広かったので、若年層向けなど別パターンを制作し、各世代に合わせる事を意識しました。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item">
-                    <img src="img/work3.jpg">
-                    <div class="works-body fade-bottom">
-                        <h3 class="abhaya">méllow</h3>
-                        <h4 class="abhaya">Design</h4>
-                        <p>エステサロンプロデュース商品<br class="sp">「デコルテケアオイル」のカタログ制作</p>
-                        <div class="works-body-text">
-                            <p>
-                                ▪訴求対象<br>
-                                ▪要望<br>
-                                ▪ツール<br>
-                                ▪こだわり
-                            </p>
-                            <p>
-                                20代～40代の美意識が高い女性<br>
-                                女性が好きそうなデザイン<br>
-                                Illustrator / CLIP STUDIO<br>
-                                一筆書きの女性イラストをプロダクトメッセージのアクセントとして使ったり、水彩素材を作り淡い印象に仕上げました。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item">
-                    <img src="img/work5.jpg">
-                    <div class="works-body fade-bottom">
-                        <h3 class="abhaya">méllow</h3>
-                        <h4 class="abhaya">Illustration</h4>
-                        <p>エステサロンプロデュース商品<br class="sp">「デコルテケアオイル」のイラスト素材制作</p>
-                        <div class="works-body-text">
-                            <p>
-                                ▪訴求対象<br>
-                                ▪要望<br>
-                                ▪ツール<br>
-                                ▪こだわり
-                            </p>
-                            <p>
-                                20代～40代の美意識が高い女性<br>
-                                水彩画の素材が欲しい<br>
-                                CLIP STUDIO<br>
-                                ザクロなど、なかなか希望のイラストが見つからず、自らイラスト制作しLPなどに使用しました。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="works-item">
-                    <img src="img/work4.jpg">
-                    <div class="works-body fade-bottom">
-                        <h3 class="abhaya aoba">仙台青葉まつり</h3>
-                        <h4 class="abhaya">Coding</h4>
-                        <p>仙台青葉まつりのWPサイト制作</p>
-                        <div class="works-body-text">
-                            <p>
-                                ▪URL<br>
-                                ▪制作期間<br>
-                                ▪ツール<br>
-                                ▪こだわり
-                            </p>
-                            <p>
-                                <a class="aoba-link" href="https://www.aoba-matsuri.com/" target="_blank" rel="noopener">https://www.aoba-matsuri.com/</a><br>
-                                3ヶ月<br>
-                                VScode<br>
-                                カスタムフィールドなどで更新しやすいようにカスタマイズ。管理面で運用しやすいWPサイトを目指しました。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <!-- area-3 section ------------------------->
+    <section id="works" class="area-wrap-common area-wrap-03">
+      <div class="area-cont-ttl area-cont-ttl-03">
+        <h3>Works</h3>
+      </div>
+      <div class="works-cont-wrap">
+        <div class="works-flex-box">
+          <div class="works-item fade-in">
+            <picture>
+              <source srcset="img/works_01_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/works_01.jpg" alt="">
+            </picture>
+          </div>
+          <div class="works-item fade-in late1">
+            <picture>
+              <source srcset="img/works_02_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/works_02.jpg" alt="">
+            </picture>
+          </div>
+          <div class="works-item fade-in late2">
+            <picture>
+              <source srcset="img/works_03_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/works_03.jpg" alt="">
+            </picture>
+          </div>
+          <div class="works-item fade-in late3">
+            <picture>
+              <source srcset="img/works_04_sp.jpg" media="(max-width: 767px)"/>
+              <img src="img/works_04.jpg" alt="">
+            </picture>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- section 2 ------------------------->
-    <section id="about" class="section-wrap noto">
-        <div class="section-body-wrap">
-            <div class="section-ttl-wrap fade-left">
-                <h2>わたしのこと</h2>
-                <img src="img/sub-ttl_4.svg" alt="About me.">
-            </div>
-            <div class="about-body-flex-wrap noto fade-in">
-                <h3>トキメキ、ワクワク、<br class="x-sp">キラキラを大事に。</h3>
-                <div class="about-body-cont">
-                    <div class="about-body-item1">
-                        <h4>まき</h4>
-                        <div class="about-body-item1-flex about-body-item1-adjust">
-                            <p class="abhaya">maki design</p>
-                            <!-- <a href="https://instagram.com/ma_teto?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener"><img class="insta" src="img/insta.svg"></a> -->
-                        </div>
-                        <p class="abhaya about-body-item1-adjust">Designer / Front end engineer<br>
-                        Age 30</p>
-                    </div>
-                    <div class="about-body-item2">
-                        <h4>経歴</h4>
-                        <div class="about-body-text">
-                            <p>2020.04 ～ 2022.06</p>
-                            <p>株式会社クロコ デザイナー兼コーダーとして従事</p>
-                        </div>
-                        <div class="about-body-text">
-                            <p>2020.07 ～2023.03</p>
-                            <p>株式会社ASA フロントエンドエンジニアとして従事</p>
-                        </div>
-                        <div class="about-body-text">
-                            <p>2023.03 ～</p>
-                            <p>フリーランスとして独立</p>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="about-body-text-wrap">
-                    <img class="about-img" src="img/about_img.png">
-                    <p>独学で制作業界に入り、制作全般の担当者としてECサイト運用やLP制作、イラスト・バナー制作を担当。</p>
-                    <p>コーポレートサイトのHTML・CSSのコーディングやWordPressテーマ制作、YouTubeチャンネルの動画制作まで多岐にわたり従事。</p>
-                    <p>
-                    分析結果を踏まえ、デザイン・コーディング・構成による課題解決を意識して業務に取り組んでいます。</p>
-                </div>
-            </div>
+
+    <!-- area-4 section ------------------------->
+    <section id="service" class="area-wrap-common area-wrap-04">
+      <div class="area-cont-ttl area-cont-ttl-04">
+        <h3>Service</h3>
+      </div>
+      <div class="area-point-txt">
+        <p>お気軽に<br>ご相談ください</p>
+      </div>
+      <div class="service-flex-wrap">
+        <div class="number-wrap">
+          <picture>
+            <source srcset="img/number_img_sp.svg" media="(max-width: 767px)"/>
+            <img src="img/number_img.svg" alt="">
+          </picture>
         </div>
+        <div class="service-cont-wrap">
+          <div class="service-conts fade-in">
+            <h4>デザイン</h4>
+            <p>WebサイトやLP、バナー広告など様々なデザイン業務をお引き受け致します。<br>
+              制作物のデザインテイストの幅は広く、顧客満足を第一に制作いたします。</p>
+          </div>
+          <div class="service-conts fade-in">
+            <h4>コーディング</h4>
+            <p  class="service-conts-adjust">WordPressのテーマ制作やHTMLでのLP制作なども承っております。<br>
+              コーディングのみのご依頼も可能です。</p>
+          </div>
+          <div class="service-conts fade-in">
+            <h4>DTP</h4>
+            <p>チラシ・名刺・パンフレットなどの紙媒体のご相談も可能です。<br>
+              まずはお気軽にご連絡ください。</p>
+          </div>
+        </div>
+      </div>
+      <!-- コンタクト -->
+      <div class="contact-wrap">
+        <img src="img/contact_eng_point.svg" alt="contact us">
+        <div class="contact-cont">
+          <p>こちらに掲載できない実績もございます。<br>
+            詳しくはお問い合わせください。</p>
+          <a class="contact-cta" href="https://forms.gle/vKMbk1BdxvmL9Vko8" target="_blank" rel="noopener noreferrer">
+            <p>お問い合わせはこちら</p>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
     </section>
+
+    <!-- footer ------------------------->
     <footer>
-        <div class="copy">
-            <span>© 2023 chimaki create</span>
-        </div>
+      <picture>
+        <source srcset="img/footer_bk_sp.jpg" media="(max-width: 767px)"/>
+        <img class="footer-bk" src="img/footer_bk_pc.jpg" alt="">
+      </picture>
+      <div class="footer-cont">
+        <a href="#"><img class="footer-logo" src="img/logo.svg"></a>
+        <span>© 2023 MAKI SATO</span>
+      </div>
     </footer>
+
+    
+  </main>
+  <!-- ここまでコンテンツ/////////////////////////////////////////////////////////-->
+
+<!-- footer -->
+
+<!-- footer -->
+<!-- jquery,slick -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<!-- animation JS-->
+<script src="js/animation.js"></script>
 </body>
-<!-- jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
-<!-- slickのJavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/original.js"></script>
 </html>
