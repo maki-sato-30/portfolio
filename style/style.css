@@ -408,7 +408,7 @@ area-3 section
 }
 
 .works-flex-box {
-    width: max-content;
+    width: fit-content;
     display: flex;
     justify-content: center;
     gap: 40px;
